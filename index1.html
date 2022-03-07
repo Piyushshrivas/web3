@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properity...</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container {
+            border: 2px solid lightcoral;
+            background-color: aquamarine;
+            height: 1400px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid rgb(218, 130, 30);
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #box3 {
+            /* position: absolute; */
+
+            position: relative;
+
+            left: 35px;
+            top: 32px;
+
+            /* for fixed  */
+            /* position: fixed;
+           right: 6px;
+           bottom: 4px; */
+
+            /* for sticky */
+            /* position: sticky;
+            top: 2px; */
+
+
+        }
+        .container1{
+            margin: 4px;
+        }
+
+        .wox {
+            width: 150px;
+            height: 150px;
+            border: 4px solid black;
+            margin: 4px;
+        }
+
+        #wox1 {
+            position: relative;
+            z-index: 45;
+            top: 80px;
+            background-color: aquamarine;
+        }
+
+        #wox2 {
+            position: relative;
+            top: 14px;
+            z-index: 46;
+            background-color: rgb(255, 210, 127);
+            /* visibility: hidden; */
+            /* display: none; */
+
+        }
+
+        #wox3 {
+            background-color: rgb(255, 127, 155);
+        }
+
+        #wox4 {
+            background-color: rgb(61, 108, 114);
+        }
+        .container2{
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #First{
+            font-size: 3em;
+            padding: 3em;
+        }
+        #Second{
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <div class="container1">
+
+        <div class="wox" id="wox1"></div>
+        <div class="wox" id="wox2"></div>
+        <div class="wox" id="wox3"></div>
+        <div class="wox" id="wox4"></div>
+    </div>
+
+    <div class="container2">
+        <h1 id="First">This is first Heading</h1>
+        <h1 id="Second">This is second Heading</h1>
+        <h1 id="Third">This is third Heading</h1>
+    </div>
+
+</body>
+
+</html>
